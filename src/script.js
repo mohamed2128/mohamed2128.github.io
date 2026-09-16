@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 
+import "../src/style.css"
+
 let projects = [
     {
         language: "Python",
@@ -118,35 +120,43 @@ function animateMain() {
 }
 
 let tipElement = document.getElementById('box1');
+let tip2Element = document.getElementById('box2');
 
 function Box1Animation() {
     gsap.to(tipElement, {
-        opacity: 0,
         onComplete: function () {
             gsap.fromTo(tipElement,
-                {opacity: 0, rotate: 0},
-                {opacity: 1, duration: 2, ease: "power2.out", color: "green"}
+                {opacity: 0, rotate: 0, y: 25},
+                {opacity: 1, duration: 2, y: 0, ease: "power2.out", color: "white"}
+            );
+        }
+    });
+    gsap.to(tip2Element, {
+        onComplete: function () {
+            gsap.fromTo(tip2Element,
+                {opacity: 0, rotate: 0, y: 25},
+                {opacity: 1, duration: 3, y: 0, ease: "power2.out", color: "white"}
             );
         }
     });
 }
 
-gsap.to("#maintitlesection", {
-    duration: 1.5,
-    ease: "ease-in-out",
-    scrollTrigger: {
-       trigger: "#maintitlesection",
-       start: "top 60%",
-       end: "top 40%",
-       toggleActions: "restart none reverse none",
-       onEnter: () => {
-        gsap.to(background, {
-            backgroundImage: 'linear-gradient(to right, #00ff55, #000000, #82fac0)',
-            duration: 1.5,
-            ease: "ease-in-out"
-        });
-    },
-    }
- });
+// gsap.to("#maintitlesection", {
+//     duration: 1.5,
+//     ease: "ease-in-out",
+//     scrollTrigger: {
+//        trigger: "#maintitlesection",
+//        start: "top 60%",
+//        end: "top 40%",
+//        toggleActions: "restart none reverse none",
+//        onEnter: () => {
+//         gsap.to(background, {
+//             backgroundImage: 'linear-gradient(to right, #00ff55, #000000, #82fac0)',
+//             duration: 1.5,
+//             ease: "ease-in-out"
+//         });
+//     },
+//     }
+//  });
 
 animateMain()

@@ -18,9 +18,14 @@ body {
 }
 
 #maintitlesection h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    opacity: 0;
+}
+
+#maintitlesection h2 {
+    opacity: 0;
 }
 
 p {
