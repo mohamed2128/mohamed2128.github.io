@@ -2,8 +2,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 
-import "../src/style.css"
-
 let projects = [
     {
         language: "Python",
