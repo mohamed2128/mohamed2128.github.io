@@ -6,15 +6,32 @@ let projects = [
     {
         language: "Python",
         title: "Stay Alive",
-        description: "Een Python game gemaakt met Pygame.",
+        description: "Een 2D top down shooter game",
         image: "../media/img.png",
-        technologies: ["Python", "Pygame"]
+        link: "https://github.com/Rac-Software-Development/wp1-2025-pygame-1c3-quatro/tree/v1.0.1",
     },
     {
-        language: "???",
-        title: "???",
-        description: "???",
-        image: "",
+        language: "HTML, CSS, Python, JS, Docker",
+        title: "Progressive Web Apps",
+        description: "Een Progressive Web App die een snelle en app-achtige gebruikerservaring biedt, " +
+            "direct vanuit de browser en zonder App Store.",
+        image: "../media/img_2.png",
+        link: "https://github.com/Rac-Software-Development/wp4-2026-pwa-1c1-goat/tree/V1.0.0",
+    },
+    {
+        language: "HTML, CSS, Python, SQL, Ajax, Rest, JS",
+        title: "Test Correct Dashboard",
+        description: "Proof-of-concept webapplicatie die leerlingresultaten uit Test Correct overzichtelijk visualiseert. " +
+            "Leerlingen volgen hun voortgang per vak en leerdoel, terwijl docenten resultaten per student en klas kunnen bekijken.",
+        image: "../media/img_1.png",
+        link: "https://github.com/Rac-Software-Development/wp3-2026-rest-1c1-goat/tree/v1.0.0",
+    },
+    {
+        language: "C#, Unity",
+        title: "TCR Remastered",
+        description: "Een 'Baldi's Basics' geïnspireerd spel dat zich afspeelt op mijn vorige school, ontwikkeld als onderdeel van een schoolproject.",
+        media: "../media/TCRR.mp4",
+        link: "",
     },
 ];
 
@@ -26,12 +43,28 @@ let dotsContainer = document.getElementById("slider-dots");
 function showProject(index) {
     let project = projects[index];
 
-    let media = `
-        <img 
-            src="${project.image}" 
-            alt="${project.title}"
-        >
-    `;
+    let media;
+
+    if (project.media) {
+        media = `
+            <video 
+                src="${project.media}" 
+                autoplay 
+                muted 
+                loop
+            >
+                Je browser ondersteunt geen MP4-video.
+            </video>
+        `;
+    } else {
+        media = `
+            <img 
+                src="${project.image}" 
+                alt="${project.title}"
+            >
+        `;
+    }
+
 
     container.innerHTML = `
         <div class="project-card">
@@ -44,7 +77,7 @@ function showProject(index) {
                     ${project.language}
                 </span>
                 
-                <h2>${project.title}</h2>
+                <h2><a href="${project.link}">${project.title}</a></h2>
                 <p>${project.description}</p>
             </div>
         </div>
