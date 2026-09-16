@@ -1,22 +1,49 @@
----
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="stylesheet" href="/src/style.css" />
+        <title>Portfolio</title>
+    </head>
 
----
+    <body>
+        <section id="maintitlesection">
+            <h1 id="box1">Mijn naam is Mohamed Outourght.</h1>
+            <h2>Een nieuwsgierige, creatieve Backend Developer.</h2>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Mijn naam is Mohamed.</h1>
-		<p>Een nieuwsgierige, creatief Backend developer.</p>
-		<p>Houd van creëren van nieuwe Innovaties, problemen oplossen, en het opleveren van kwaliteit resultaten.</p>
-		<p>Ik werk graag in een team waar we samen werken en elkaar helpen, maar kan ook zelfstandig aan de slag.</p>
-		<p>Mijn interesse ligt vooral bij backend en full stack development waar ik werk met verschillende talen en frameworks.</p>
-		<p>Ik kan goed omgaan met scrum en meerdere projecten tegelijkertijd.</p>
-	</body>
+            <p>
+                Houd van creëren van nieuwe innovaties, problemen oplossen
+                en het opleveren van kwalitatieve resultaten.
+                Ik werk graag in een team waar we samen werken en elkaar helpen,
+                maar kan ook zelfstandig aan de slag.
+            </p>
+        </section>
+
+
+        <section id="projects">
+            <h1>Projecten</h1>
+            <h2 class="smalltitle">Verschillende Projecten waar ik heb aan gewerkt</h2>
+
+            <div id="project-slider">
+                <button id="previous-project" class="slider-button">&#10095;</button>
+
+                <div id="project-container"></div>
+                <button id="next-project" class="slider-button">&#10095;</button>
+            </div>
+
+            <div id="slider-dots"></div>
+        </section>
+
+        <section id="maintitlesection">
+            <h1 id="box1">Mijn Passies</h1>
+            <h2>[Temp]</h2>
+
+            <p>
+                Benoeming van mijn passies
+            </p>
+        </section>
+
+        <script src="../script.js"></script>
+    </body>
 </html>

@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    background: #151515;
+}
+
+#maintitlesection {
+  min-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+#maintitlesection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+p {
+    max-width: 650px;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+#projects {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.smalltitle {
+    text-align: center;
+}
+
+#project-slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#project-container {
+    flex: 1;
+}
+
+.project-card {
+    background: #151515;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid rgb(182, 182, 182);
+    box-shadow: 0px 0px 30px 10px rgb(118, 118, 118);
+}
+
+.project-media {
+    width: 100%;
+    height: 450px;
+}
+
+.project-media img,
+.project-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+    color: white;
+}
+
+.language {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project-content h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: white;
+    transition: 0.5s;
+}
+
+.project-content p {
+    color: lightgrey;
+    line-height: 1.6;
+}
+
+.slider-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #222;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.slider-button:hover {
+    background: #444;
+}
+
+#slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background: #555;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background: white;
+}
+
+.project-content h2:hover {
+    font-size: 32px;
+    color: lightcyan;
+    transition: 0.5s;
+}
