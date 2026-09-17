@@ -31,7 +31,7 @@ let projects = [
         title: "TCR Remastered",
         description: "Een 'Baldi's Basics' geïnspireerd spel dat zich afspeelt op mijn vorige school, ontwikkeld als onderdeel van een schoolproject.",
         media: "../media/TCRR.mp4",
-        link: "",
+        link: "https://sussy2128.itch.io/tcr-remasterd",
     },
 ];
 
