@@ -1,6 +1,6 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { TextPlugin } from "gsap/TextPlugin";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {TextPlugin} from "gsap/TextPlugin";
 
 let projects = [
     {
@@ -140,10 +140,10 @@ showProject(currentProject);
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-let main_tl  = gsap.timeline({});
+let main_tl = gsap.timeline({});
 
 function animateMain() {
-     main_tl
+    main_tl
         .add(Box1Animation())
     ;
 

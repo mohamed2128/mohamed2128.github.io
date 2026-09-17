@@ -7,14 +7,26 @@ body {
 }
 
 #maintitlesection {
-  min-height: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  box-sizing: border-box;
+    min-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#mainendsection {
+    min-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: white;
 }
 
 #maintitlesection h1 {
@@ -89,6 +101,7 @@ a {
     height: 100%;
     object-fit: contain;
 }
+
 .project-media video {
     width: 100%;
     height: 100%;
